@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../pages/Style.css'
 import { Link } from 'react-router-dom';
 
 function Sidebar() {
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    const role = localStorage.getItem('userRole');
+    if (role === 'admin') {
+      setIsAdmin(true);
+    
+    }
+  }, []);
+
   return (
     <div className='bg-white sidebar p-2'>
       <div className='m-2'>
@@ -24,10 +34,12 @@ function Sidebar() {
           <i className='bi bi-clipboard-data fs-5 me-3'></i>
           <span>Reservation</span>
         </Link>
+        {isAdmin && (
         <Link to="/AdminOrders" className='list-group-item py-2'>
           <i className='bi bi-people fs-5 me-3'></i>
           <span>Customers</span>
         </Link>
+        )}
         <a className='list-group-item py-2'>
           <i className='bi bi-power fs-5 me-3'></i>
           <span>Logout</span>

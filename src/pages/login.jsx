@@ -32,8 +32,14 @@ function Login() {
                 toast.success('User Logged in successfully!');
                 localStorage.setItem('userId', response.id);
 
-                if (response.name.toLowerCase() === "admin")
+                if (response.name.toLowerCase() === "admin") {
+                    localStorage.setItem('userRole', 'admin');
                     navigate("/admin");
+                }
+                else if(response.name.toLowerCase() == "hotcook") {
+                    localStorage.setItem('userRole', 'employee');
+                    navigate("/admin");
+                }
                 else
                     navigate("/reservations");
             } else {
