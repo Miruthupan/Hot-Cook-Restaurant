@@ -100,11 +100,12 @@ function AdminOrders() {
               {toggle ? 'Hide Sidebar' : 'Show Sidebar'}
             </Button>
 
-            <Button variant="success" onClick={generatePDF} className="mb-3">
-              Download PDF
-            </Button>
+            
 
             <h1 className="text-light">Customer Food Orders</h1>
+            <Button variant="success" onClick={generatePDF} className="mb-6">
+              Download PDF
+            </Button>
             
             <Table striped bordered hover variant="light" id="ordersTable" className="mt-3">
               <thead>

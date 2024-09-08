@@ -78,11 +78,13 @@ const Menu = () => {
   return (
     <div className="menu-page">
       <header className="menu-header d-flex justify-content-center align-items-center">
-        <h1 className="text-light display-4">Our Menu</h1>
+      <h>.</h>
+        <h1 className="text-light display-5">Our Menu</h1>
+        <h>.</h>
       </header>
 
       <div className="container my-5">
-        <div className="row justify-content-center my-4">
+        <div className="row justify-content-center my-5">
           <div className="col-md-6">
             <InputGroup>
               <Form.Control
