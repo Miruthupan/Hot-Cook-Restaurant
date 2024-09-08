@@ -48,8 +48,9 @@ function AdminReservations() {
             <Button variant="primary" onClick={Toggle}>
               {toggle ? 'Hide Sidebar' : 'Show Sidebar'}
             </Button>
-
-            <h1 className="mt-4">Reservations Management</h1>
+            <h1 className="mb-6">Reservations Management</h1>
+            <h1>.</h1>
+            <h1 className="mb-6">Reservations Management</h1>
             
             {error && <div className="alert alert-danger">{error}</div>}
             

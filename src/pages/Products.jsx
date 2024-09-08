@@ -98,6 +98,9 @@ function Products() {
         )}
         <div className={toggle ? 'col-8 col-md-10 offset-md-2' : 'col'}>
           <div className='p-3'>
+            <h1>.</h1>
+            
+            <h>.</h>
             <Button className='my-5' variant="primary" onClick={() => setShowAddModal(true)}>Add Product</Button>
             <ListGroup className='mt-3'>
               {products.map(product => (
@@ -120,6 +123,7 @@ function Products() {
 
           {/* Add Product Modal */}
           <Modal show={showAddModal} onHide={() => setShowAddModal(false)}>
+            
             <Modal.Header closeButton>
               <Modal.Title>Add Product</Modal.Title>
             </Modal.Header>
