@@ -1,0 +1,52 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.login-image-section {
+    display: none;
+}
+
+.login-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .login-image-section {
+        display: block;
+    }
+
+    .login-card {
+        margin-left: 40px;
+    }
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-block {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-footer p {
+    font-size: 14px;
+}
