@@ -48,7 +48,7 @@ function AdminReservations() {
             <Button variant="primary" onClick={Toggle}>
               {toggle ? 'Hide Sidebar' : 'Show Sidebar'}
             </Button>
-            <h1 className="mb-6">Reservations Management</h1>
+            <h1 className="mb-6">.</h1>
             <h1>.</h1>
             <h1 className="mb-6">Reservations Management</h1>
             

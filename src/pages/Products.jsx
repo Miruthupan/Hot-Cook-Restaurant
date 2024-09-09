@@ -109,7 +109,7 @@ function Products() {
                     <Image src={`http://localhost:8080${product.imageUrl}`} rounded style={{ width: '50px', height: '50px', marginRight: '10px' }} />
                     <div>
                       <h5>{product.name}</h5>
-                      <p>Price: ${product.price}</p>
+                      <p>Price: Rs{product.price}</p>
                     </div>
                   </div>
                   <div>

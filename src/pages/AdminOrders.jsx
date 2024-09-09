@@ -129,7 +129,7 @@ function AdminOrders() {
                         ? order.orderItems.map(item => `${item.foodItem.name} (x${item.quantity})`).join(', ')
                         : 'No items'
                       }</td>
-                      <td>${order.totalPrice ? order.totalPrice.toFixed(2) : '0.00'}</td>
+                      <td>Rs{order.totalPrice ? order.totalPrice.toFixed(2) : '0.00'}</td>
                       <td>{order.orderDate ? new Date(order.orderDate).toLocaleDateString() : 'Not available'}</td>
                       <td>{order.status}</td>
                       <td>
